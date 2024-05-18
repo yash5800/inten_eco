@@ -8,14 +8,14 @@
     <link rel="icon" href="https://nuturemite.info/wp-content/uploads/2022/10/nuturmite_logo_tranparent.png">
 </head>
 <body>
-    <div class="header">
+    <div id="header" class="header">
         <img src="https://nuturemite.info/wp-content/uploads/2022/10/nuturmite_logo_tranparent.png" alt="Logo">
         <div class="menu">
             <ul>
-                <li><a>Home</a></li>
-                <li><a>Shop</a></li>
-                <li><a>Cart</a></li>
-                <li><a>About Us</a></li>
+                <li onclick="location.href='#header'"><a>Home</a></li>
+                <li onclick="location.href='#items'"><a>Shop</a></li>
+                <li onclick="location.href='#items'"><a>Cart</a></li>
+                <li  onclick="location.href='#aboutus'" ><a>About Us</a></li>
                 <li><a>Login</a></li>
                 <li><a>Register</a></li>
             </ul>
@@ -31,7 +31,7 @@
 
     <div class="products">
         <h2>EXCLUSIVE PRODUCT</h2>
-        <div class="items">
+        <div id="items" class="items">
             <div class="i">
                 <img  class="pro" src="https://nuturemite.info/wp-content/uploads/2022/11/1074354-3-300x225.jpg" alt="products">
                 <p>MEN HEALTH, WOMEN HEALTH</p>
@@ -100,7 +100,7 @@
         </div>
     </div>
 
-    <footer class="end">
+    <footer id="end" class="end">
         <div class="cutomer">
              <h3>CUSTOMER SERVICE</h3>
              <ol>
@@ -112,7 +112,7 @@
                 <li><a href="#">Login</a></li>
              </ol>
         </div>
-        <div class="about">
+        <div id='aboutus' class="about">
             <h3>ABOUT US</h3>
             <ol>
                <li><a href="#">About US</a></li>
