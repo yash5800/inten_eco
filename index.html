@@ -23,17 +23,17 @@
     </div>
 
     <div class="features">
-        <div class="freeship"><img src="images/freeship.png" ><h3>FREE SHIPPING</h3><p>Free shipping on all order over ₹2000</p></div>
-        <div class="moneyback"><img src="images/moneyback.png" alt=""><h3>MONEY BACK GUARANTEE</h3><p>100% money back guarantee</p></div>
-        <div class="onlinesupport"><img src="images/support.png" alt=""><h3>ONLINE SUPPORT 24/7</h3><p>Whatsapp 8919993233 For online support</p></div>
-        <div class="securepayment"><img src="images/secure.png" alt=""><h3>SECURE PAYMENT</h3><p>100% Secure payments in our portal</p></div>
+        <div class="freeship"><img class="pro" src="images/freeship.png" ><h3>FREE SHIPPING</h3><p>Free shipping on all order over ₹2000</p></div>
+        <div class="moneyback"><img class="pro" src="images/moneyback.png" alt=""><h3>MONEY BACK GUARANTEE</h3><p>100% money back guarantee</p></div>
+        <div class="onlinesupport"><img class="pro" src="images/support.png" alt=""><h3>ONLINE SUPPORT 24/7</h3><p>Whatsapp 8919993233 For online support</p></div>
+        <div class="securepayment"><img class="pro" src="images/secure.png" alt=""><h3>SECURE PAYMENT</h3><p>100% Secure payments in our portal</p></div>
     </div>
 
     <div class="products">
         <h2>EXCLUSIVE PRODUCT</h2>
         <div class="items">
             <div class="i">
-                <img src="https://nuturemite.info/wp-content/uploads/2022/11/1074354-3-300x225.jpg" alt="products">
+                <img  class="pro" src="https://nuturemite.info/wp-content/uploads/2022/11/1074354-3-300x225.jpg" alt="products">
                 <p>MEN HEALTH, WOMEN HEALTH</p>
                 <h5>Nuturemite Abso curcumin 500 mg Veg capsules</h5>
                 <p>₹858.00</p>
@@ -42,7 +42,7 @@
                 </div>
             </div>
             <div class="i">
-                <img src="https://nuturemite.info/wp-content/uploads/2022/11/1074363-1-300x225.jpg" alt="products">
+                <img  class="pro" src="https://nuturemite.info/wp-content/uploads/2022/11/1074363-1-300x225.jpg" alt="products">
                 <p>AYURVEDIC</p>
                 <h5>Nuturemite Amla Powder 250 gms</h5>
                 <p>₹128.00</p>
@@ -51,7 +51,7 @@
                 </div>
             </div>
             <div class="i">
-                <img src="https://nuturemite.info/wp-content/uploads/2022/11/1074340-1-300x225.jpg" alt="products">
+                <img class="pro"  src="https://nuturemite.info/wp-content/uploads/2022/11/1074340-1-300x225.jpg" alt="products">
                 <p>AYURVEDIC</p>
                 <h5>Nuturemite Amla Powder 450 gms</h5>
                 <p>₹221.00</p>
@@ -60,7 +60,7 @@
                 </div>
             </div>
             <div class="i">
-                <img src="https://nuturemite.info/wp-content/uploads/2022/11/1074341-1-300x225.jpg" alt="products">
+                <img  class="pro" src="https://nuturemite.info/wp-content/uploads/2022/11/1074341-1-300x225.jpg" alt="products">
                 <p>AYURVEDIC</p>
                 <h5>Nuturemite Amla Powder 900 gms</h5>
                 <p>₹360.00</p>
@@ -69,7 +69,7 @@
                 </div>
             </div>
             <div class="i">
-                <img src="https://nuturemite.info/wp-content/uploads/2022/11/1074342-1-300x225.jpg" alt="products">
+                <img class="pro"  src="https://nuturemite.info/wp-content/uploads/2022/11/1074342-1-300x225.jpg" alt="products">
                 <p>AYURVEDIC</p>
                 <h5>Nuturemite Ashwagandha Powder 250 gms</h5>
                 <p>₹260.00</p>
@@ -78,7 +78,7 @@
                 </div>
             </div>
             <div class="i">
-                <img src="https://nuturemite.info/wp-content/uploads/2022/11/1074343-1-300x225.jpg" alt="products">
+                <img  class="pro" src="https://nuturemite.info/wp-content/uploads/2022/11/1074343-1-300x225.jpg" alt="products">
                 <p>ANTIOXIDANTS</p>
                 <h5> Nuturemite Ashwagandha Powder 450 gms</h5>
                 <p> ₹488.00</p>
@@ -87,7 +87,7 @@
                 </div>
             </div>
             <div class="i">
-                <img src="https://nuturemite.info/wp-content/uploads/2022/11/1074360-3-300x225.jpg" alt="products">
+                <img  class="pro"  src="https://nuturemite.info/wp-content/uploads/2022/11/1074360-3-300x225.jpg" alt="products">
                 <p>ANTIOXIDANTS, VITAMINS& MINERALS
                     Nuturemite AstaReal 
                     </p>
@@ -148,5 +148,15 @@
             <p>© Copyright 2022. All Rights Reserved.</p>
         </div>
     </footer>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelector(".pro"), {
+            max: 25,
+            speed: 400
+        });
+        
+        //It also supports NodeList
+        VanillaTilt.init(document.querySelectorAll(".pro"));
+    </script>
 </body>
 </html>

@@ -89,7 +89,6 @@ body{
 
 .features img{
     width: 50px;
-    box-shadow: -3px 3px 10px 1px rgb(0, 0, 0,0.5);
     border-radius: 1rem;
 }
 
