@@ -120,7 +120,6 @@ background-color: #c7c7c7;
 }
 
 
-
 .products img{
     object-fit: cover;
     width: 100px;
@@ -141,10 +140,13 @@ background-color: #c7c7c7;
 }
 
 .products .items .i p{
-    font-size: 0.7em;
+    font-size: 0.99em;
 }
 
-
+.products .items .i p:nth-child(4){
+    padding: 10px;
+    color: green;
+}
 
 .products .items .i #buy{
     margin: 15px;
@@ -155,6 +157,8 @@ background-color: #c7c7c7;
 .products .items .i #buy:hover{
     box-shadow: 0 0 5px black;
 }
+
+
 
 /* footer  */
 
@@ -242,7 +246,7 @@ background-color: #c7c7c7;
         transform: translate(-50%,-50%);
     }
     .end{
-        top: 120em;
+        top: 123em;
         justify-content: left;
     }
     .features{
