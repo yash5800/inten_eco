@@ -8,35 +8,61 @@
     <link rel="icon" href="https://nuturemite.info/wp-content/uploads/2022/10/nuturmite_logo_tranparent.png">
 </head>
 <body>
-    <div id="cart"><img src="images/cart.png" alt="cart"><h4 id="count">0</h4></div>
-    <div id="header" class="header">
-        <img src="https://nuturemite.info/wp-content/uploads/2022/10/nuturmite_logo_tranparent.png" alt="Logo">
-        <div class="menu">
-            <ul>
-                <li onclick="location.href='#header'"><a>Home</a></li>
-                <li onclick="location.href='#items'"><a>Shop</a></li>
-                <li onclick="location.href='#items'"><a>Cart</a></li>
-                <li  onclick="location.href='#aboutus'" ><a>About Us</a></li>
-                <li><a>Login</a></li>
-                <li><a>Register</a></li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="features">
-        <div class="freeship"><img class="pro" src="images/freeship.png" ><h3>FREE SHIPPING</h3><p>Free shipping on all order over ₹2000</p></div>
-        <div class="moneyback"><img class="pro" src="images/moneyback.png" alt=""><h3>MONEY BACK GUARANTEE</h3><p>100% money back guarantee</p></div>
-        <div class="onlinesupport"><img class="pro" src="images/support.png" alt=""><h3>ONLINE SUPPORT 24/7</h3><p>Whatsapp 8919993233 For online support</p></div>
-        <div class="securepayment"><img class="pro" src="images/secure.png" alt=""><h3>SECURE PAYMENT</h3><p>100% Secure payments in our portal</p></div>
-    </div>
-
-    <div class="products">
-        <h2>EXCLUSIVE PRODUCT</h2>
-        <div id="items" class="items">
+    
+          <div id="cart"><img src="images/cart.png" alt="cart" onclick="cart()" ><h4 id="count">0</h4></div>
+          <div id="header" class="header">
+              <img src="https://nuturemite.info/wp-content/uploads/2022/10/nuturmite_logo_tranparent.png" alt="Logo">
+              <div class="menu">
+                  <ul>
+                      <li onclick="location.href='#header'"><a>Home</a></li>
+                      <li onclick="location.href='#items'"><a>Shop</a></li>
+                      <li  onclick="location.href='#aboutus'" ><a>About Us</a></li>
+                      <li id="login"><a href="login.html">Login</a></li>
+                  </ul>
+              </div>
+          </div>
+        <div id="displayproducts">
+            <div class="features">
+                <div class="slide active">
+                    <img class="pro" src="images/freeship.png" alt="Free Shipping">
+                    <h3>FREE SHIPPING</h3>
+                    <p>Free shipping on all orders over ₹2000</p>
+                </div>
+                <div class="slide">
+                    <img class="pro" src="images/moneyback.png" alt="Money Back Guarantee">
+                    <h3>MONEY BACK GUARANTEE</h3>
+                    <p>100% money back guarantee</p>
+                </div>
+                <div class="slide">
+                    <img class="pro" src="images/support.png" alt="Online Support">
+                    <h3>ONLINE SUPPORT 24/7</h3>
+                    <p>WhatsApp 8919993233 For online support</p>
+                </div>
+                <div class="slide">
+                    <img class="pro" src="images/secure.png" alt="Secure Payment">
+                    <h3>SECURE PAYMENT</h3>
+                    <p>100% Secure payments in our portal</p>
+                </div>
+            </div>
             
-        </div>
+          <div class="products">
+              <h2>EXCLUSIVE PRODUCT</h2>
+              <div id="items" class="items">
+                  
+              </div>
+          </div>
     </div>
-
+    <div id="cartsection">
+       <div class="head">
+           <button onclick="back()">&#10094;</button>
+           <h3>My Cart</h3>
+       </div>
+       <div id="cart_items" class="cart_items">
+           <div id="cartItems" class="cartItems">
+               <!-- Cart items will be injected here by JS -->
+           </div>
+       </div>
+    </div>
     <footer id="end" class="end">
         <div class="cutomer">
              <h3>CUSTOMER SERVICE</h3>
@@ -86,15 +112,6 @@
         </div>
     </footer>
     <script type="text/javascript" src="main.js"></script>
-    <script type="text/javascript" src="vanilla-tilt.js"></script>
-    <script type="text/javascript">
-        VanillaTilt.init(document.querySelector(".pro"), {
-            max: 25,
-            speed: 400
-        });
-        
-        //It also supports NodeList
-        VanillaTilt.init(document.querySelectorAll(".pro"));
-    </script>
+  
 </body>
 </html>
